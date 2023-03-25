@@ -15,11 +15,13 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 400ms;
+  transition: transform 350ms ease-in-out;
 }
 
 .button:hover,
 .button:focus {
   background-color: #ececec;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {

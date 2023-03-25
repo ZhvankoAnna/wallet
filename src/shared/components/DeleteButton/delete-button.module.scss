@@ -13,9 +13,11 @@
   border-radius: 18px;
   cursor: pointer;
   transition: background-color 400ms;
+  transition: transform 1s ease;
 }
 
 .button:hover,
 .button:focus {
   background-color: #21bd9b;
+  transform: rotateY(360deg);
 }

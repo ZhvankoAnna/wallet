@@ -10,11 +10,13 @@
   border: none;
   border-radius: 18px;
   transition: background-color 200ms;
+  transition: transform 1s ease;
 }
 
 .button:hover,
 .button:focus {
   background-color: #ffffff;
+  transform: rotateY(360deg);
 }
 
 .label {

@@ -57,10 +57,12 @@
   background-color: transparent;
   cursor: pointer;
   transition: background-color 200ms;
+  transition: transform 350ms ease-in-out;
 
   &:hover,
   &:focus {
     background-color: #ececec;
+    transform: rotate(90deg);
   }
 }
 

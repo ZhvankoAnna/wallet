@@ -102,9 +102,16 @@
   color: getColor('secondary-text-color');
   cursor: pointer;
   display: none;
+  transition: color 400ms;
+
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 8px;
+  }
+
+  &:hover {
+    color: getColor('secondary-color');
+    text-decoration: underline;
   }
 }
 
@@ -140,10 +147,17 @@
 
   background-color: getColor('primary-color');
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 25px 7px, 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
-}
+  transition: transform 200ms ease-in-out;
 
-.button__question:hover {
-  background-color: #0d856b;
+  &:hover {
+    background-color: #0d856b;
+    transform: scale(1.1);
+  }
+
+  &:first-child:hover {
+    background-color: #0d856b;
+    transform: scale(0.8);
+  }
 }
 
 .button__wrapper {
